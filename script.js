@@ -50,9 +50,11 @@ Complete the exercise in the space below:
 */
 
 const isCharAVowel = (vowel) => {
-  if (vowel == "A" || vowel == "E" || vowel == "I" || vowel == "O" || vowel == "u"){
+  if (vowel === "A" || vowel === "E" || vowel === "I" || vowel === "O" || vowel === "U",
+    vowel === "a" || vowel === "e" || vowel === "i" || vowel === "o" || vowel === "u"
+  ){
     return "true"
-  } else if (vowel === "Y"){
+  } else if (vowel === "Y", vowel === "y"){
     return "false"
   }
 }
@@ -154,10 +156,10 @@ Complete the exercise in the space below:
 */
 
 const convertTemperature = (temp, scale) => {
-  if (scale == "c") {
+  if (scale == "c" || scale == "C") {
     return (temp * 9/5) + 32
   }
-  else if (scale == "f"){
+  else if (scale == "f" || scale == "F"){
     return (temp - 32) * 5/9
   }
 }
